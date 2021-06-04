@@ -13,7 +13,7 @@ The system is split between a transmitting rocket system and a receiving base st
 - Adafruit Stemma GPS
 - Adafruit RFM69HCW x 2
 - Adafruit micro SD card shield
-- LED
+- LED, resistor
 
 ### Initial Plan
 The initial plan was to have the rocket transmit and save data to an internal SD card.  Unfortunately the Nano
