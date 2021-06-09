@@ -15,7 +15,7 @@
 // folllowing connections are for connecting sensors etc to Arduino Nano
 //pins: GPS 3.3v, GND, RX1 -> D7, TX0 -> D8
 //pins: Radio 3.3v, GND, SCLK -> D13, MISO ->D12, MOSI -> D11, CS -> D4, RST -> D2, GO -> D3
-//pins: LED status light GND, D5(+ resistor)
+//pins: LED status light GND, D9(+ resistor)
 
 
 
@@ -125,9 +125,9 @@ void loop()
 {
  //LED bootLight will flash 5 times to show it is working
   while (bootLight > 0) {
-    digitalWrite(5, HIGH);         // sets LED on
+    digitalWrite(9, HIGH);         // sets LED on
     delay(1000);
-    digitalWrite( 5, LOW);         // LED off
+    digitalWrite( 9, LOW);         // LED off
     delay(1000);
     bootLight--;
   }
@@ -211,6 +211,6 @@ void loop()
   }
   }
   if (faultFlag >0){
-    digitalWrite(5, HIGH); 
+    digitalWrite(9, HIGH); 
   }
 }
